@@ -16,7 +16,9 @@ const state = {
     ]
 };
 
-const getters = {};
+const getters = {
+    allTodos: (state) => state.todos
+};
 
 const actions = {};
 
