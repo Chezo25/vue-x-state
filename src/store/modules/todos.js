@@ -10,11 +10,17 @@ const getters = {
 
 const actions = {
     async fetchTodos({ commit }) {
-        const response = await axios.get('https://jsonplaceholder.typicode.com/todos?_limit10')
+        const response = await axios.get('https://jsonplaceholder.typicode.com/todos?_limit10');
+
+        commit('setTodos',
+            response.data)
     }
+
 };
 
-const mutations = {};
+const mutations = {
+    setTodos: (state, todos) => (state.todos = todos)
+};
 
 export default {
     state,
