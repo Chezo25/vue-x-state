@@ -1,9 +1,29 @@
 import axios from 'axios';
 
-const state = {};
+const state = {
+    todos: [{
+            id: 1,
+            title: 'Todos One'
+        },
+        {
+            id: 2,
+            title: 'Todos Two'
+        }, {
+            id: 3,
+            title: 'Todos Three'
+        }
+    ]
+};
 
 const getters = {};
 
 const actions = {};
 
 const mutations = {};
+
+export default {
+    state,
+    getters,
+    actions,
+    mutations,
+};
