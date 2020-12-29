@@ -2,7 +2,9 @@
     <div>
         <h3>Todos</h3>
     <div class="todos">
-        <div v-for="todo in allTodos" v-bind:key="todo.id" class="todo"></div>
+        <div v-for="todo in allTodos" v-bind:key="todo.id" class="todo">
+            {{todo.title}}
+        </div>
     </div>
     </div>
 </template>
