@@ -8,7 +8,8 @@ const state = {
         {
             id: 2,
             title: 'Todos Two'
-        }, {
+        },
+        {
             id: 3,
             title: 'Todos Three'
         }
