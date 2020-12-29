@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-        <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container">
+    <Todos />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Todos from './components/Todos.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Todos
   }
 }
 </script>
@@ -23,5 +25,16 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+body{
+  font-family: "Franklin Gothic Medium", "Arial Narrow", "Arial";
+  line-height: 1.7;
+  background: Lightgreen;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 2rem;
 }
 </style>
